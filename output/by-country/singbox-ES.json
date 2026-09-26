@@ -4,20 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vmess",
       "tag": "🇪🇸 西班牙 (Spain) 01 - xiaohe",
-      "server": "140.174.184.5",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "qItG8SueYQcP"
+      "server": "66.163.118.73",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto"
     },
     {
       "type": "shadowsocks",
       "tag": "🇪🇸 西班牙 (Spain) 02 - xiaohe",
-      "server": "108.181.121.226",
+      "server": "140.174.184.5",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
-      "password": "WSyL4XTwNsdv"
+      "password": "qItG8SueYQcP"
     },
     {
       "type": "vless",
@@ -40,12 +40,12 @@
       }
     },
     {
-      "type": "vmess",
+      "type": "shadowsocks",
       "tag": "🇪🇸 西班牙 (Spain) 04 - xiaohe",
-      "server": "66.163.118.73",
-      "server_port": 22324,
-      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
-      "security": "auto"
+      "server": "108.181.121.226",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "WSyL4XTwNsdv"
     },
     {
       "type": "vless",
@@ -69,37 +69,28 @@
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇪🇸 西班牙 (Spain) 06 - xiaohe",
-      "server": "esbe.vihodest.net",
+      "server": "mygptagent.org",
       "server_port": 443,
-      "uuid": "88956de8-38db-449c-8410-4b70a4fb5c9b",
-      "flow": "xtls-rprx-vision",
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "esbe.vihodest.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ihEweXseofZYKT-AB6cTtQ1IlXgC3a7HHAsi-o50yFE",
-          "short_id": "e93196a756abca09"
+        "server_name": "mygptagent.org",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "mygptagent.org"
         }
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 07 - xiaohe",
-      "server": "5.188.181.201",
-      "server_port": 9025,
-      "method": "aes-256-cfb",
-      "password": "XPtzA9sCug3SPR4c"
-    },
-    {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 08 - xiaohe",
+      "tag": "🇪🇸 西班牙 (Spain) 07 - xiaohe",
       "server": "87.76.179.117",
       "server_port": 7443,
       "uuid": "cb15d1b0-e48b-4c4c-b98a-fa1103aa3723",
@@ -109,7 +100,7 @@
         "server_name": "www.samsung.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "edge"
         },
         "reality": {
           "enabled": true,
@@ -129,8 +120,7 @@
         "🇪🇸 西班牙 (Spain) 04 - xiaohe",
         "🇪🇸 西班牙 (Spain) 05 - xiaohe",
         "🇪🇸 西班牙 (Spain) 06 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 07 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 08 - xiaohe"
+        "🇪🇸 西班牙 (Spain) 07 - xiaohe"
       ]
     },
     {
@@ -143,8 +133,7 @@
         "🇪🇸 西班牙 (Spain) 04 - xiaohe",
         "🇪🇸 西班牙 (Spain) 05 - xiaohe",
         "🇪🇸 西班牙 (Spain) 06 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 07 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 08 - xiaohe"
+        "🇪🇸 西班牙 (Spain) 07 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
