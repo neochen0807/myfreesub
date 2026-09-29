@@ -5,20 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.17.148.22
+  server: 104.18.37.127
   port: 443
   udp: true
   type: vless
-  uuid: f6b5a6a3-f3e1-63ca-bb68-bdc400000000
+  uuid: 3c6d1933-b22a-484b-ac8a-63e24f5fba75
   tls: true
-  servername: netlivpn5505.ffffdsaaa.workers.dev
+  servername: server9.9966338.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
+    path: /imnotarealherox
     headers:
-      Host: netlivpn5505.ffffdsaaa.workers.dev
+      Host: server9.9966338.xyz
 proxy-groups:
 - name: PROXIES
   type: select
