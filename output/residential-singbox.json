@@ -4,46 +4,34 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 01 (家宽) - xiaohe",
-      "server": "155.117.19.17",
-      "server_port": 443,
-      "password": "5fa748137b6d822308eea4611f474ad5",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "a39ca173b57ac7021b08bf3e3de9f1f6"
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe",
-      "server": "169.40.32.73",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe",
+      "server": "178.83.46.216",
       "server_port": 2053,
       "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
     },
     {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe",
-      "server": "hinet1.2yly.com",
-      "server_port": 24215,
-      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe",
+      "server": "2193972c-tmkao0-u1vxv2-v3c2.hk3.hyhuawei.com",
+      "server_port": 443,
+      "password": "5f091cbe-fb34-11ea-9777-f23c9164ca5d",
       "tls": {
         "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
-          "short_id": ""
-        }
+        "server_name": "2193972c-tmkao0-u1vxv2-v3c2.hk3.hyhuawei.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe",
+      "server": "44577f17-tm96o0-tne5x4-1rfon.nw4.hyhuawei.com",
+      "server_port": 443,
+      "password": "aed1cc24-351d-11ef-ba52-f23c9164ca5d",
+      "tls": {
+        "enabled": true,
+        "server_name": "44577f17-tm96o0-tne5x4-1rfon.nw4.hyhuawei.com",
+        "insecure": false
       }
     },
     {
@@ -63,9 +51,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) - xiaohe",
-        "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe",
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe",
         "🇸🇬 新加坡 (Singapore) 04 (家宽) - xiaohe"
       ]
     },
@@ -73,9 +61,9 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) - xiaohe",
-        "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaohe",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe",
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe",
         "🇸🇬 新加坡 (Singapore) 04 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
