@@ -5,32 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
-  server: 117776f2-tmm5c0-ttxkqc-e06r.hk3.hyhuawei.com
+  server: 12e4d2e3-tmm5c0-tnhx9s-1rnrp.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: 861726bb-c61a-b0e0-99fa-5ddfdcf21902
-  sni: 117776f2-tmm5c0-ttxkqc-e06r.hk3.hyhuawei.com
+  password: 989aa406-ea9b-11ef-97da-f23c91cfbbc9
+  sni: 12e4d2e3-tmm5c0-tnhx9s-1rnrp.hk3.hyhuawei.com
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  server: 0b16a4e6-tmm5c0-tpkh0c-1r7od.nw4.hyhuawei.com
+  server: 7108fdc9-tmm5c0-tnkuks-wujn.nw4.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: 6d56436c-150d-11f0-b0c8-f23c913c8d2b
-  sni: 0b16a4e6-tmm5c0-tpkh0c-1r7od.nw4.hyhuawei.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
-  server: a736eb68-tmb1c0-tpkh0c-1r7od.hk2.hyhuawei.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6d56436c-150d-11f0-b0c8-f23c913c8d2b
-  tls: true
-  reality-opts:
-    public-key: c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo
-  servername: download.windowsupdate.com
-  client-fingerprint: random
+  password: 51362ab6-b5e6-11ea-ad28-f23c913c8d2b
+  sni: 7108fdc9-tmm5c0-tnkuks-wujn.nw4.hyhuawei.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -38,7 +27,6 @@ proxy-groups:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -46,6 +34,5 @@ proxy-groups:
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
