@@ -5,43 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 188.114.97.6
-  port: 8080
-  udp: true
-  type: vless
-  uuid: b9ede7a5-5b4b-4aee-ac37-2c307e587e47
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoidVkzQm1ROUg4dyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: courses.mftplus.qzz.io
-- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
-  server: 172.64.153.235
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 656bb400-3b7a-47e3-94b0-0362f3865072
-  tls: true
-  servername: socks5.revil-time3.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /socks5://128.140.46.169:13482
-    headers:
-      Host: socks5.revil-time3.workers.dev
-- name: 🇨🇿 捷克 (Czech) 03 - xiaohe
-  server: 86.54.82.184
-  port: 443
-  udp: true
-  type: vless
-  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
-  tls: true
-  reality-opts:
-    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
-  servername: example.org
-  client-fingerprint: firefox
-- name: 🇨🇿 捷克 (Czech) 04 - xiaohe
   server: 153.76.190.41
   port: 8443
   udp: true
@@ -49,7 +12,7 @@ proxies:
   password: 3a92b39a-5f02-415e-a908-783ec320e83f
   sni: speedtestmark.com
   skip-cert-verify: false
-- name: 🇨🇿 捷克 (Czech) 05 - xiaohe
+- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
   server: 85.117.235.50
   port: 443
   udp: true
@@ -69,9 +32,6 @@ proxy-groups:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
-  - 🇨🇿 捷克 (Czech) 03 - xiaohe
-  - 🇨🇿 捷克 (Czech) 04 - xiaohe
-  - 🇨🇿 捷克 (Czech) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -79,8 +39,5 @@ proxy-groups:
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
   - 🇨🇿 捷克 (Czech) 02 - xiaohe
-  - 🇨🇿 捷克 (Czech) 03 - xiaohe
-  - 🇨🇿 捷克 (Czech) 04 - xiaohe
-  - 🇨🇿 捷克 (Czech) 05 - xiaohe
 rules:
 - MATCH,PROXIES
